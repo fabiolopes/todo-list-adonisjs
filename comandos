@@ -1,0 +1,19 @@
+instalação do adonisjs
+npm i -g adonisjs@cli
+
+criação do peojwto
+adonis new nomeProjeto
+
+subir projeto adonis serve
+
+Para trabalhar com bd, precisa instalar o driver do banco utilizado, conforme https://adonisjs.com/docs/3.2/database-setup.
+Utilizei o comando npm install mysql pois era mysql
+
+Para criar uma tabela, necessário o comando adonis make: migration minhaTabela
+
+Para que a tabela seja refletida no sql, comando adonis migration:run
+Caso dê o erro "Error: Cannot find module '@adonisjs/lucid/providers/LucidProvider'", 
+executar adonis install @adonisjs/lucid
+
+Para criar o model da tabela, adonis make:model Task. Ele relaciona via lucid o model à tabela do migration.
+
