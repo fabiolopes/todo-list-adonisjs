@@ -17,3 +17,5 @@ executar adonis install @adonisjs/lucid
 
 Para criar o model da tabela, adonis make:model Task. Ele relaciona via lucid o model à tabela do migration.
 
+##Validação no adonis##
+ adonis install @adonisjs/validator
